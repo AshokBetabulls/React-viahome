@@ -1561,4 +1561,12 @@ height: 23px;
 }
     
 }
-
+/*modifications on converting into reactjs */
+.btnreact{
+    margin-left:10px;
+}
+#root>div {
+    height:100%;
+    
+}
+ #root, body, html {height:100%; }

@@ -178,7 +178,7 @@ class MedianIncome extends Component {
                       </div>
                       <div className="modal-footer">
                           <button data-dismiss="modal" className="danger-btn" type="button">Cancel</button>
-                          <button className="main-btn" type="button">Confirm</button>
+                          <button className="main-btn btnreact" type="button">Confirm</button>
                       </div>
                   </div>
               </div>
