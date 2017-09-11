@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-import DashBoardContent from '../components/Admin/DashBoard'
 
 
-class AdminHeader extends Component {
-    
-   
+class Header extends Component {
   render() {
     return (
       <div>
-
-       <section id="container" >
+        
+               <section id="container" >
 {/*header start*/}
 <header className="header fixed-top clearfix">
 {/*logo start*/}
@@ -106,18 +103,19 @@ class AdminHeader extends Component {
         
         {/* Content main Page */}
         
-        <DashBoardContent />
+         {this.props.children}
+        
+         {/* <DashBoardContent /> */}
          {/* Content main Page */}
  
 
 
 </section>
     
+        
       </div>
     );
   }
 }
 
-
-
-export default AdminHeader;
+export default Header;

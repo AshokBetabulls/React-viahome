@@ -17,6 +17,16 @@ body {
     font-size:13px;
     text-rendering:optimizeLegibility;
 }
+.body {
+    color:#767676;
+    background:#f1f2f7;
+    font-family:'Open Sans',sans-serif;
+    padding:0px !important;
+    margin:0px !important;
+    font-size:13px;
+    text-rendering:optimizeLegibility;
+}
+
 ul, .list-unstyled {
     padding-left: 30px;
 }
@@ -47,6 +57,12 @@ a,a:hover,a:focus {
 /*login page*/
 .login-body {
     background:#32323A;
+    background-size:cover;
+    width:100%;
+    height:100%;
+}
+.login-body-2 {
+    background:##f1f2f7 !important;
     background-size:cover;
     width:100%;
     height:100%;
@@ -342,6 +358,7 @@ ul.sidebar-menu li a.active i {
     width:100%;
 
 }
+
 .brand {
     background:#338B7A;
     float:left;
@@ -5788,4 +5805,7 @@ right: -1px;
 }
 .tblalignmentmedianincome th{
     text-align: center;
+}
+#root, body, html {
+    height:100%;
 }

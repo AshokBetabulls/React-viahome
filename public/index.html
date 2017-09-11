@@ -33,7 +33,20 @@
       <script src="js/jquery.js"></script>
     <script src="bs3/js/bootstrap.min.js"></script>
           
-          
+          <script>
+	$(document).on('click', '.browse', function(){
+  var file = $(this).parent().parent().parent().find('.file');
+  file.trigger('click');
+});
+$(document).on('change', '.file', function(){
+  $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+});
+</script>
+          <script>
+	$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 
 <script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
 <script src="js/jquery.scrollTo.min.js"></script>

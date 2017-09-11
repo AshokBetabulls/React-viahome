@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import Routes from './Routes';
 
 const store = configureStore();
+console.log(this.props)
 
 ReactDOM.render(<Provider store={store}>
         <Routes />
