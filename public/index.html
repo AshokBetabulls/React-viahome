@@ -1,16 +1,17 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
- 
-      <title>Via Home</title>
-      
-      
-       <!--Core CSS -->
+
+    <title>Via Home</title>
+
+
+    <!--Core CSS -->
     <link href="bs3/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-reset.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
@@ -22,119 +23,50 @@
 
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-  </head>
+</head>
 <!--  <body class="login-body cust-body"> -->
-      <body>
+
+<body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
-  
-      <script src="js/jquery.js"></script>
-    <script src="bs3/js/bootstrap.min.js"></script>
-        <!--      <script>
-document.getElementById("btn2").style.display = 'none'
+
+    <script src="js/jquery.js"></script>
 
 
 
-function active()
-{
-	
- $("#active").modal();
-document.getElementById("btn2").style.display = 'block'
-document.getElementById("btn1").style.display = 'none'
-}
-function deactive()
-{
-$("#deactivate").modal();
-document.getElementById("btn1").style.display = 'block'
-document.getElementById("btn2").style.display = 'none'
-}
-</script>
-    
-     <script>
-document.getElementById("btn4").style.display = 'none'
-
-
-
-function active1()
-{
-	
- $("#active").modal();
-document.getElementById("btn4").style.display = 'block'
-document.getElementById("btn3").style.display = 'none'
-}
-function deactive1()
-{
-$("#deactivate").modal();
-document.getElementById("btn3").style.display = 'block'
-document.getElementById("btn4").style.display = 'none'
-}
-</script>
-    
-     <script>
-document.getElementById("btn6").style.display = 'none'
-
-
-
-function active2()
-{
-	
- $("#active").modal();
-document.getElementById("btn6").style.display = 'block'
-document.getElementById("btn5").style.display = 'none'
-}
-function deactive2()
-{
-$("#deactivate").modal();
-document.getElementById("btn5").style.display = 'block'
-document.getElementById("btn6").style.display = 'none'
-}
-</script>
     <script>
-document.getElementById("btn8").style.display = 'none'
+        $(document).on('click', '.browse', function() {
+            var file = $(this).parent().parent().parent().find('.file');
+            file.trigger('click');
+        });
+        $(document).on('change', '.file', function() {
+            $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
+        });
+    </script>
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 
 
+    <script src="bs3/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+    <script src="js/jquery.nicescroll.js"></script>
 
-function active3()
-{
-	
- $("#active").modal();
-document.getElementById("btn8").style.display = 'block'
-document.getElementById("btn7").style.display = 'none'
-}
-function deactive3()
-{
-$("#deactivate").modal();
-document.getElementById("btn7").style.display = 'block'
-document.getElementById("btn8").style.display = 'none'
-}
-</script>  -->
-          
-          <script>
-	$(document).on('click', '.browse', function(){
-  var file = $(this).parent().parent().parent().find('.file');
-  file.trigger('click');
-});
-$(document).on('change', '.file', function(){
-  $(this).parent().find('.form-control').val($(this).val().replace(/C:\\fakepath\\/i, ''));
-});
-</script>
-          <script>
-	$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-</script>
-          
-          
+    <!--common script init for all pages-->
+    <script src="js/scripts.js"></script>
 
-<script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
-<script src="js/jquery.scrollTo.min.js"></script>
-<script src="js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
-<script src="js/jquery.nicescroll.js"></script>
 
-          <!--common script init for all pages-->
-<script src="js/scripts.js"></script>
-          
-  </body>
+    <script src="js/modernizr.custom.js"></script>
+
+    <script src="js/classie.js"></script>
+
+
+</body>
+
 </html>

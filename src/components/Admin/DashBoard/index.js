@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import HeadBar from '../Header'
+import HeadBar from '../Header';
+import  { Link } from 'react-router-dom';
 
 
 class DashBoard extends Component {
@@ -13,7 +14,7 @@ class DashBoard extends Component {
 			<div className="col-md-12">
                     <ul className="breadcrumbs-alt braeadcrumbs-dashboardresponsive">
                         <li>
-                            <a href="admin-dashboard.html" className="current">Dashboard</a>
+                            <Link to="AdminDashBoard" className="current">Dashboard</Link>
                         </li>
                          
                     </ul>

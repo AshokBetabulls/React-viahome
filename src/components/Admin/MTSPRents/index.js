@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import HeadBar from '../Header'
+import HeadBar from '../Header';
+import  { Link } from 'react-router-dom';
 
 
 class MTSPRents extends Component {
@@ -14,10 +15,10 @@ class MTSPRents extends Component {
 			<div className="col-md-6 col-sm-12 col-xs-12 no-padding-left">
                     <ul className="breadcrumbs-alt">
                         <li>
-                            <a href="admin-dashboard.html" className="">Dashboard</a>
+                            <Link to="AdminDashBoard" className="">Dashboard</Link>
                         </li>
                          <li>
-                            <a className="current" href="mtsprents.html">MTSP Rents</a>
+                            <Link className="current" to="DashBoardMTSPRents">MTSP Rents</Link>
                         </li>
                       {/*    <li>
                             <a className="current" href="#">Request Project</a>
@@ -44,7 +45,7 @@ class MTSPRents extends Component {
 						</div>
 					</div>
 					<div className="col-md-2 col-sm-4 col-xs-12">
-						<a className="default-btn pull-right addbtn" href="addmtsprents.html">Add</a>
+						<Link className="default-btn pull-right addbtn" to="DashBoardMTSPRentsAdd">Add</Link>
 					</div>
 					
 				</div>
@@ -89,7 +90,7 @@ class MTSPRents extends Component {
 						<td className="text-right">1183.5</td>
 						<td>  AL</td>
 						<td>
-									<a href="editfairmarketrents.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardMTSPRentsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				        </td>
 					</tr>
@@ -106,7 +107,7 @@ class MTSPRents extends Component {
 						<td className="text-right">1218</td>
 						<td>  AL</td>
 						<td>
-									<a href="editfairmarketrents.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+								<Link to="DashBoardMTSPRentsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				        </td>
 					</tr>
@@ -123,7 +124,7 @@ class MTSPRents extends Component {
 						<td className="text-right">913.5</td>
 						<td>  AL</td>
 						<td>
-									<a href="editfairmarketrents.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+								<Link to="DashBoardMTSPRentsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				        </td>
 					</tr>
@@ -140,7 +141,7 @@ class MTSPRents extends Component {
 						<td className="text-right">1249.5</td>
 						<td>  AL</td>
 						<td>
-									<a href="editfairmarketrents.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+								<Link to="DashBoardMTSPRentsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				        </td>
 					</tr>
@@ -157,7 +158,7 @@ class MTSPRents extends Component {
 						<td className="text-right">1249.5</td>
 						<td>  AL</td>
 						<td>
-									<a href="editfairmarketrents.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardMTSPRentsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				        </td>
 					</tr>
@@ -174,7 +175,7 @@ class MTSPRents extends Component {
 						<td className="text-right">913.5</td>
 						<td>  AL</td>
 						<td>
-									<a href="editfairmarketrents.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+								<Link to="DashBoardMTSPRentsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				        </td>
 					</tr>

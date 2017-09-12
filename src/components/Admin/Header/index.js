@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import  { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 class Header extends Component {
@@ -11,9 +13,9 @@ class Header extends Component {
 <header className="header fixed-top clearfix">
 {/*logo start*/}
 <div className="brand">
-    <a href="admin-dashboard.html" className="logo">
+    <NavLink to="AdminDashBoard" className="logo">
         <img src="images/main-logo.png" className="img-responsive" />
-    </a>
+    </NavLink>
     <div className="sidebar-toggle-box">
         <div className="fa fa-bars"></div>
     </div>
@@ -35,9 +37,9 @@ class Header extends Component {
                 <b className="caret"></b>
             </a>
             <ul className="dropdown-menu extended logout">
-                <li><a href="profile.html"><i className=" fa fa-suitcase"></i>Profile</a></li>
+                <li><Link to="DashBoardAdminProfile"><i className=" fa fa-suitcase"></i>Profile</Link></li>
               
-                <li><a href="index.html"><i className="fa fa-key"></i> Log Out</a></li>
+                <li><Link to="/"><i className="fa fa-key"></i> Log Out</Link></li>
             </ul>
         </li>
         {/* user login dropdown end */}
@@ -57,10 +59,14 @@ class Header extends Component {
         <div className="leftside-navigation">
             <ul className="sidebar-menu" id="nav-accordion">
                 <li>
-                    <a className="active" href="admin-dashboard.html">
+        {/*   <Link className="active" to="AdminDashBoard">
                         <i className="fa fa-dashboard"></i>
                         <span>Dashboard</span>
-                    </a>
+                    </Link>*/}
+            <NavLink className="" to="AdminDashBoard">
+                        <i className="fa fa-dashboard"></i>
+                        <span>Dashboard</span>
+                    </NavLink>
                 </li>
                 <li className="sub-menu">
                     <a href="javascript:;">
@@ -68,26 +74,26 @@ class Header extends Component {
                         <span>Configuration</span>
                     </a>
                     <ul className="sub">
-                       <li><a href="medianincome.html" data-placement="top" data-toggle="tooltip"  data-original-title="Median  Income">Median Income</a></li>
-                        <li><a href="mtsprents.html" data-placement="top" data-toggle="tooltip"  data-original-title="Multifamily Tax Subsidy Program">MTSP Rents</a></li>
-                       <li><a href="renovationcostassumptions.html" data-placement="top" data-toggle="tooltip"  data-original-title="Renovation Cost Assumptions">RC Assumptions</a></li>
+                       <li><NavLink to="DashBoardMedianIncome" data-placement="top" data-toggle="tooltip"  data-original-title="Median  Income">Median Income</NavLink></li>
+                        <li><NavLink to="DashBoardMTSPRents" data-placement="top" data-toggle="tooltip"  data-original-title="Multifamily Tax Subsidy Program">MTSP Rents</NavLink></li>
+                       <li><NavLink to="DashBoardRCAssumptions" data-placement="top" data-toggle="tooltip"  data-original-title="Renovation Cost Assumptions">RC Assumptions</NavLink></li>
 
                     </ul>
                 </li>
  
             <li>
-                    <a href="manageusers.html">
+                    <NavLink to="DashBoardUserManage">
                         <i className="fa fa-users"></i>
                         <span>Users</span>
-                    </a>
+                    </NavLink>
                 
                 </li>
 
                 <li>
-                    <a href="admindashboardprojectslist.html">
+                    <NavLink to="DashBoardProjects">
                         <i className="fa fa-tasks"></i>
                         <span>Projects</span>
-                    </a>
+                    </NavLink>
                 
                 </li>
 

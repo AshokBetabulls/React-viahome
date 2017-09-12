@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import HeadBar from '../Header';
+import  { Link } from 'react-router-dom';
 
 
 class Projects extends Component {
@@ -16,10 +17,10 @@ class Projects extends Component {
 			<div className="col-md-12">
                     <ul className="breadcrumbs-alt">
                         <li>
-                            <a href="admin-dashboard.html" className="">Dashboard</a>
+                            <Link to="AdminDashBoard" className="">Dashboard</Link>
                         </li>
                          <li>
-                            <a className="current" href="manageusers.html">Projects</a>
+                            <Link className="current" to="DashBoardProjects">Projects</Link>
                         </li>
                       
                     </ul>
@@ -57,7 +58,7 @@ class Projects extends Component {
                                 <td className="text-right">0</td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="editadminvhmodeltable.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></a></td>
+                                <td><Link to="DashBoardProjectsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></Link></td>
 							
                             </tr>
                             <tr>
@@ -67,7 +68,7 @@ class Projects extends Component {
                                 <td className="text-right">0</td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="editadminvhmodeltable.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></a></td>
+                               <td><Link to="DashBoardProjectsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></Link></td>
                                 
 								
                             </tr>
@@ -78,7 +79,7 @@ class Projects extends Component {
                                 <td className="text-right">0</td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="editadminvhmodeltable.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></a></td>
+                               <td><Link to="DashBoardProjectsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></Link></td>
                                 
 								
                             </tr>
@@ -89,7 +90,7 @@ class Projects extends Component {
                                 <td className="text-right">0</td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="editadminvhmodeltable.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></a></td>
+                               <td><Link to="DashBoardProjectsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></Link></td>
 								
                             </tr>
                             <tr>
@@ -99,7 +100,7 @@ class Projects extends Component {
                                 <td className="text-right">0</td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="editadminvhmodeltable.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></a></td>
+                               <td><Link to="DashBoardProjectsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></Link></td>
                                 
                             </tr>
                                 <tr>
@@ -109,7 +110,7 @@ class Projects extends Component {
                                 <td className="text-right">0</td>
                                 <td></td>
                                 <td></td>
-                                    <td><a href="editadminvhmodeltable.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></a></td>
+                                   <td><Link to="DashBoardProjectsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></Link></td>
                             </tr>
                             <tr>
                                 <td>Subdivision</td>
@@ -118,7 +119,7 @@ class Projects extends Component {
                                 <td className="text-right">0</td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="editadminvhmodeltable.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></a></td>
+                               <td><Link to="DashBoardProjectsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></Link></td>
                                 
                             </tr>
                             <tr>
@@ -128,7 +129,7 @@ class Projects extends Component {
                                 <td className="text-right">0</td>
                                 <td></td>
                                 <td></td>
-                                <td><a href="editadminvhmodeltable.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></a></td>
+                               <td><Link to="DashBoardProjectsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></Link></td>
                             </tr>
                                 <tr>
                                 <td>Antique</td>
@@ -150,7 +151,7 @@ class Projects extends Component {
                                 <td className="text-right">6</td>
                                 <td className="text-right">588,836.00</td>
                                 <td>N/A</td>
-                                    <td><a href="editadminvhmodeltable.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></a></td>
+                                   <td><Link to="DashBoardProjectsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit VH Model"></i></Link></td>
                                 
                             </tr>
                                  

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import HeadBar from '../Header';
-
+import  { Link } from 'react-router-dom';
 
 class MTSPRentsEdit extends Component {
   render() {
@@ -16,10 +16,10 @@ class MTSPRentsEdit extends Component {
 			<div className="col-md-12">
                     <ul className="breadcrumbs-alt braeadcrumbs-dashboardresponsive">
                         <li>
-                            <a href="admin-dashboard.html" className="">Dashboard</a>
+                            <Link to="AdminDashBoard" className="">Dashboard</Link>
                         </li>
                          <li>
-                            <a className="current" href="editfairmarketrents.html">Edit MTSP Rents</a>
+                            <Link className="current" to="DashBoardMTSPRentsEdit">Edit MTSP Rents</Link>
                         </li>
                         {/* <li>
                             <a className="current" href="#">Elements</a>
@@ -162,7 +162,7 @@ class MTSPRentsEdit extends Component {
         </div>
                       </div>
                       <div className="modal-footer text-center center-block">
-                          <a href="mtsprents.html"><button type="button" className="default-btn">OK</button></a>
+                          <a href="DashBoardMTSPRents"><button type="button" className="default-btn">OK</button></a>
                       </div>
                   </div>
               </div>

@@ -4,23 +4,23 @@ import  { Link } from 'react-router-dom';
 
 
 
-class RCAssumptionsEdit extends Component {
+class RCAssumptionsAdd extends Component {
   render() {
     return (
       <div>
-        <HeadBar>
+       <HeadBar>
         
             {/* main content start */}
      <section id="main-content">
         <section className="wrapper">
 		<div className="row">
 			<div className="col-md-12">
-                    <ul className="breadcrumbs-alt braeadcrumbs-dashboardresponsive">
+                    <ul className="breadcrumbs-alt">
                         <li>
                             <Link to="AdminDashBoard" className="">Dashboard</Link>
                         </li>
                          <li>
-                            <Link className="current" to="DashBoardRCAssumptionsEdit"> Update RC Assumptions</Link>
+                            <Link className="current" to="DashBoardRCAssumptionsAdd"> Add RC Assumptions</Link>
                         </li>
                         {/* <li>
                             <a className="current" href="#">Elements</a>
@@ -35,7 +35,7 @@ class RCAssumptionsEdit extends Component {
             <div className="col-md-12">
                 <section className="panel">
                     <header className="panel-heading main-bg">
-                        Update Renovation Cost Assumptions
+                        Add Renovation Cost Assumptions
                         {/*  <span className="tools pull-right">
                             <a href="javascript:;" className="fa fa-chevron-down"></a>
                             <a href="javascript:;" className="fa fa-cog"></a>
@@ -50,26 +50,19 @@ class RCAssumptionsEdit extends Component {
 {/* 
 									<div className="col-md-12">
 									<div className="prf-contacts sttng prf-personal">
-                                        <h2>Update Renovation Cost Assumptions</h2>
+                                        <h2>Add Renovation Cost Assumptions</h2>
                                     </div>
 									</div>
  */}
                                         <div className="col-md-6">
 {/*                                             <label for="inputsm">2017 Median Income</label> */}
-											<div className="select-style form-control">
+											<div className="select-style form-control selectadjust">
 											  <select>
 												
 												<option value="">Demolition</option>
 												<option value="">Roof</option>
 												<option value="">Heater</option>
 												<option value="">Hot Water</option>
-                                                <option value="">Interior</option>
-                                                <option value="">Overall Ballpark</option>
-                                                <option value="">Window Estimate</option>
-                                                <option value="">Electric</option>
-                                                <option value="">Con.Interest</option>
-                                                <option value="">Entryway</option>
-                                                <option value="">Plumbing</option>
 												
 											</select>
 											</div>
@@ -77,19 +70,19 @@ class RCAssumptionsEdit extends Component {
                                         <div className="col-md-6">
 											<div className="form-group cust-form-group renovationcostadjustments_text">
 												<label for="inputsm">Repair Level</label>
-												<input className="form-control input-sm" id="inputsm" type="text" value="Gut2" />
+												<input className="form-control input-sm" id="inputsm" type="text" value="" />
 											</div>
 										</div>
                                         <div className="col-md-6">
 											<div className="form-group cust-form-group renovationcostadjustments_text">
 												<label for="inputsm">$ / sq ft</label>
-												<input className="form-control input-sm" id="inputsm" type="text" value="$ 3.00" />
+												<input className="form-control input-sm" id="inputsm" type="text" value="" />
 											</div>
 										</div>
                                            <div className="col-md-12">
-									<div className=" pull-right profilebtns">
+									<div className="pull-right profilebtns">
 										<a href="#" className="main-btn">Cancel</a>
-										<a href="javascript:(void);" data-toggle="modal" data-target="#successmsg" className="main-btn btnreact">Update</a>
+										<a href="javascript:(void);" data-toggle="modal" data-target="#successmsg" className="main-btn btnreact">Add</a>
 									</div>
 									</div>
                         
@@ -122,12 +115,9 @@ class RCAssumptionsEdit extends Component {
 
     {/* main content end */}
         
+       </HeadBar>
         
-        
-        </HeadBar>
-        
-        
-            {/*  Modal  */}
+           {/*  Modal  */}
           <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="successmsg" className="modal fade">
               <div className="modal-dialog modal-md">
                   <div className="modal-content">
@@ -138,7 +128,7 @@ class RCAssumptionsEdit extends Component {
         <div className="row">
       <div className="col-md-12 center-block text-center">
        <i className="fa fa-check fa-2x success-icon"></i>
-       <h4 className="text-center">RC Assumptions updated successfully.</h4>
+       <h4 className="text-center">Renovation cost assumptions added successfully.</h4>
       </div>
         </div>
                       </div>
@@ -155,4 +145,4 @@ class RCAssumptionsEdit extends Component {
   }
 }
 
-export default RCAssumptionsEdit;
+export default RCAssumptionsAdd;

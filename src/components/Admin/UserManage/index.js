@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import HeadBar from '../Header';
+import  { Link } from 'react-router-dom';
 
 
 class UserManage extends Component {
@@ -15,10 +16,10 @@ class UserManage extends Component {
 			<div className="col-md-12">
                     <ul className="breadcrumbs-alt braeadcrumbs-dashboardresponsive">
                         <li>
-                            <a href="admin-dashboard.html" className="">Dashboard</a>
+                            <Link to="AdminDashBoard" className="">Dashboard</Link>
                         </li>
                          <li>
-                            <a className="current" href="manageusers.html">Manage Users</a>
+                            <Link className="current" to="DashBoardUserManage">Manage Users</Link>
                         </li>
                       
                     </ul>
@@ -164,7 +165,7 @@ class UserManage extends Component {
                       </div>
                       <div className="modal-footer">
                           <button data-dismiss="modal" className="danger-btn" type="button">Cancel</button>
-                          <button className="main-btn" id="myButton" type="button">OK</button>
+                          <button className="main-btn btnreact" id="myButton" type="button">OK</button>
                       </div>
                   </div>
               </div>
@@ -222,7 +223,7 @@ class UserManage extends Component {
                       </div>
                       <div className="modal-footer">
                           <button data-dismiss="modal" className="danger-btn" type="button">Cancel</button>
-                          <button className="main-btn" id="myButton" type="button">OK</button>
+                          <button className="main-btn btnreact" id="myButton" type="button">OK</button>
                       </div>
                   </div>
               </div>

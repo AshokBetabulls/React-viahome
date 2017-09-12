@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import HeadBar from '../Header'
+import HeadBar from '../Header';
+import  { Link } from 'react-router-dom';
 
 
 class MedianIncome extends Component {
@@ -15,10 +16,10 @@ class MedianIncome extends Component {
 			<div className="col-md-6 col-sm-12 col-xs-12 no-padding-left">
                     <ul className="breadcrumbs-alt">
                         <li>
-                            <a href="admin-dashboard.html" className="">Dashboard</a>
+                            <Link to="AdminDashBoard" className="">Dashboard</Link>
                         </li>
                          <li>
-                            <a className="current" href="medianincome.html">Median Income</a>
+                            <Link className="current" to="DashBoardMedianIncome">Median Income</Link>
                         </li>
                       {/*   <li>
                             <a className="current" href="#">Request Project</a>
@@ -42,7 +43,7 @@ class MedianIncome extends Component {
 					</div>
                         
 					<div className="col-md-2 col-sm-4 col-xs-12">
-						<a className="default-btn pull-right addbtn" href="addmedianincome.html">Add</a>
+						<Link className="default-btn pull-right addbtn" to="DashBoardMedianIncomeAdd">Add</Link>
 					</div>
 					
 				</div>
@@ -90,7 +91,7 @@ class MedianIncome extends Component {
                                 <td className="text-right">47,340.00</td>
                                 <td>
 
-                                    <a href="editmedianincome.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit"></i></a>
+                                    <Link to="DashBoardMedianIncomeEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit"></i></Link>
 
                                     <a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon" data-original-title="Delete"></i></a>
 								</td>
@@ -108,7 +109,7 @@ class MedianIncome extends Component {
                                 <td className="text-right">45,780.00</td>
                                 <td className="text-right">48,720.00</td>
                                 <td width="160">
-									<a href="editmedianincome.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit"></i></a>
+									  <Link to="DashBoardMedianIncomeEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon" data-original-title="Delete"></i></a>
 								</td>
 								
@@ -127,7 +128,7 @@ class MedianIncome extends Component {
                                
 
                                  <td>
-									<a href="editmedianincome.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit"></i></a>
+									  <Link to="DashBoardMedianIncomeEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon" data-original-title="Delete"></i></a>
 								</td>
 								
@@ -145,7 +146,7 @@ class MedianIncome extends Component {
                                 <td className="text-right">46,980.00</td>
                                 <td className="text-right">49,980.00</td>
                                  <td>
-									<a href="editmedianincome.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit"></i></a>
+									  <Link to="DashBoardMedianIncomeEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon" data-original-title="Delete"></i></a>
 								</td>
 								

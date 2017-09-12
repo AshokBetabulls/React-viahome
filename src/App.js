@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import HeadBar from '../Header';
 
 
 class App extends Component {
   render() {
     return (
       <div>
-        <h1>ashok page</h1>
+       <HeadBar>
+       </HeadBar>
       </div>
     );
   }

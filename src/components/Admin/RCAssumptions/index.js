@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import HeadBar from '../Header';
+import  { Link } from 'react-router-dom';
 
 
 class RCAssumptions extends Component {
@@ -15,10 +16,10 @@ class RCAssumptions extends Component {
 			<div className="col-md-6 col-sm-12 col-xs-12 no-padding-left">
                     <ul className="breadcrumbs-alt">
                         <li>
-                            <a href="admin-dashboard.html" className="">Dashboard</a>
+                            <Link to="AdminDashBoard" className="">Dashboard</Link>
                         </li>
                          <li>
-                            <a className="current" href="renovationcostassumptions.html">RC Assumptions</a>
+                            <Link className="current" to="DashBoardRCAssumptions">RC Assumptions</Link>
                         </li>
                       {/*    <li>
                             <a className="current" href="#">Request Project</a>
@@ -45,7 +46,7 @@ class RCAssumptions extends Component {
 						</div>
 					</div>
 					<div className="col-md-2 col-sm-4 col-xs-12">
-						<a className="default-btn pull-right addbtn" href="addrenovationcostassumptions.html">Add</a>
+						<Link className="default-btn pull-right addbtn" to="DashBoardRCAssumptionsAdd">Add</Link>
 					</div>
 					
 				</div>
@@ -77,7 +78,7 @@ class RCAssumptions extends Component {
                                 <td>Gut</td>
                                 <td className="text-right">3.00</td>
                                <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -87,7 +88,7 @@ class RCAssumptions extends Component {
                                 <td>Substantial</td>
                                 <td className="text-right">1.50</td>
                                  <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -97,7 +98,7 @@ class RCAssumptions extends Component {
                                 <td>Moderate</td>
                                 <td className="text-right">-</td>
                                  <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -107,7 +108,7 @@ class RCAssumptions extends Component {
                                 <td>Limited</td>
                                 <td className="text-right">-</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -142,7 +143,7 @@ class RCAssumptions extends Component {
                                 <td>Tear-Off w/ Insulation</td>
                                 <td className="text-right">9.00</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -152,7 +153,7 @@ class RCAssumptions extends Component {
                                 <td>Re-Roof w/ Insulation</td>
                                 <td className="text-right">6.00</td>
                                <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -162,7 +163,7 @@ class RCAssumptions extends Component {
                                 <td>Tear-Off w/o Insulation</td>
                                 <td className="text-right">7.50</td>
                               <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -172,7 +173,7 @@ class RCAssumptions extends Component {
                                 <td>Re-Roof w/o Insulation</td>
                                 <td className="text-right">4.50</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -210,7 +211,7 @@ class RCAssumptions extends Component {
                                 <td>Individual Apt Heat / AC</td>
                                 <td className="text-right">7,000.00</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -220,7 +221,7 @@ class RCAssumptions extends Component {
                                 <td>Individual Apt Heat</td>
                                 <td className="text-right">4,500.00</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -230,7 +231,7 @@ class RCAssumptions extends Component {
                                 <td>Replace Steam Boiler</td>
                                 <td className="text-right">1,500.00</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -240,7 +241,7 @@ class RCAssumptions extends Component {
                                 <td>Minor Repair</td>
                                 <td className="text-right">500.00</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -276,7 +277,7 @@ class RCAssumptions extends Component {
                                 <td>Gut</td>
                                 <td className="text-right">6,500.00</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -286,7 +287,7 @@ class RCAssumptions extends Component {
                                 <td>Substantial</td>
                                 <td className="text-right">4,000.00</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -296,7 +297,7 @@ class RCAssumptions extends Component {
                                 <td>Moderate</td>
                                 <td className="text-right">2,000.00</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -306,7 +307,7 @@ class RCAssumptions extends Component {
                                 <td>Limited</td>
                                 <td className="text-right">500.00</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -343,7 +344,7 @@ class RCAssumptions extends Component {
                                 <td>Gut</td>
                                 <td className="text-right">4,000.00</td>
                                <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -353,7 +354,7 @@ class RCAssumptions extends Component {
                                 <td>Substantial</td>
                                 <td className="text-right">2,500.00</td>
                                  <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -363,7 +364,7 @@ class RCAssumptions extends Component {
                                 <td>Moderate</td>
                                 <td className="text-right">1,000.00</td>
                                  <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -373,7 +374,7 @@ class RCAssumptions extends Component {
                                 <td>Limited</td>
                                 <td className="text-right">500.00</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -410,7 +411,7 @@ class RCAssumptions extends Component {
                                 <td>Gut</td>
                                 <td className="text-right">70.00</td>
                                <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -420,7 +421,7 @@ class RCAssumptions extends Component {
                                 <td>Substantial</td>
                                 <td className="text-right">40.00</td>
                                  <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -430,7 +431,7 @@ class RCAssumptions extends Component {
                                 <td>Moderate</td>
                                 <td className="text-right">30.00</td>
                                  <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -440,7 +441,7 @@ class RCAssumptions extends Component {
                                 <td>Limited</td>
                                 <td className="text-right">10.00</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -450,7 +451,7 @@ class RCAssumptions extends Component {
                                 <td>No Renovation</td>
                                 <td className="text-right">-</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -460,7 +461,7 @@ class RCAssumptions extends Component {
                                 <td>New Construction</td>
                                 <td className="text-right">150.00</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -497,7 +498,7 @@ class RCAssumptions extends Component {
                                 <td>Gut</td>
                                 <td className="text-right">300.00</td>
                                <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -507,7 +508,7 @@ class RCAssumptions extends Component {
                                 <td>Substantial</td>
                                 <td className="text-right">150.00</td>
                                  <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -517,7 +518,7 @@ class RCAssumptions extends Component {
                                 <td>Moderate</td>
                                 <td className="text-right">100.00</td>
                                  <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -527,7 +528,7 @@ class RCAssumptions extends Component {
                                 <td>Limited</td>
                                 <td className="text-right">50.00</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -565,7 +566,7 @@ class RCAssumptions extends Component {
                                 <td>Gut</td>
                                 <td className="text-right">6000.00</td>
                                <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -575,7 +576,7 @@ class RCAssumptions extends Component {
                                 <td>Substantial</td>
                                 <td className="text-right">2,000.00</td>
                                  <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -585,7 +586,7 @@ class RCAssumptions extends Component {
                                 <td>Moderate</td>
                                 <td className="text-right">1,000.00</td>
                                  <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -595,7 +596,7 @@ class RCAssumptions extends Component {
                                 <td>Limited</td>
                                 <td className="text-right">500.00</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -633,7 +634,7 @@ class RCAssumptions extends Component {
                                 <td  className="text-right">6.50</td>
                                 <td className="text-right">20,702.45</td>
                                <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -643,7 +644,7 @@ class RCAssumptions extends Component {
                                 <td  className="text-right">8.50</td>
                                 <td className="text-right">27,072.43</td>
                                  <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -653,7 +654,7 @@ class RCAssumptions extends Component {
                                 <td  className="text-right">12.00%</td>
                                 <td className="text-right">38,219.90</td>
                                  <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -663,7 +664,7 @@ class RCAssumptions extends Component {
                                 <td  className="text-right">15.00</td>
                                 <td className="text-right">47,774.88</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -701,7 +702,7 @@ class RCAssumptions extends Component {
                                 <td>Replace High</td>
                                 <td className="text-right">2,500.00</td>
                                <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -711,7 +712,7 @@ class RCAssumptions extends Component {
                                 <td>Replace Med</td>
                                 <td className="text-right">1,500.00</td>
                                  <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -721,7 +722,7 @@ class RCAssumptions extends Component {
                                 <td>Replace Low</td>
                                 <td className="text-right">1,000.00</td>
                                  <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -731,7 +732,7 @@ class RCAssumptions extends Component {
                                 <td>None</td>
                                 <td className="text-right">4.50</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -769,7 +770,7 @@ class RCAssumptions extends Component {
                                 <td>Gut</td>
                                 <td className="text-right">12,000.00</td>
                                <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -779,7 +780,7 @@ class RCAssumptions extends Component {
                                 <td>Substantial</td>
                                 <td className="text-right">8,000.00</td>
                                  <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -789,7 +790,7 @@ class RCAssumptions extends Component {
                                 <td>Moderate</td>
                                 <td className="text-right">6,000.00</td>
                                  <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				               </td>
 								
@@ -799,7 +800,7 @@ class RCAssumptions extends Component {
                                 <td>Limited</td>
                                 <td className="text-right">2,000.00</td>
                                 <td>
-									<a href="updaterenovationcostassumptions.html" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></a>
+									<Link to="DashBoardRCAssumptionsEdit" className="edit2"><i data-placement="top" data-toggle="tooltip" className="fa fa-edit editicon tooltips" data-original-title="Edit"></i></Link>
 									<a href="javascript:(void);" data-toggle="modal" data-target="#delete" className="delete2"><i data-placement="top" data-toggle="tooltip" className="fa fa-trash bootbox-confirm removeicon tooltips" data-original-title="Delete"></i></a>
 				                </td>
 								
@@ -844,7 +845,7 @@ class RCAssumptions extends Component {
                       </div>
                       <div className="modal-footer">
                           <button data-dismiss="modal" className="danger-btn" type="button">Cancel</button>
-                          <button className="main-btn" type="button">Confirm</button>
+                          <button className="main-btn btnreact" type="button">Confirm</button>
                       </div>
                   </div>
               </div>
