@@ -59,11 +59,11 @@ class Header extends Component {
         <div className="leftside-navigation">
             <ul className="sidebar-menu" id="nav-accordion">
                 <li>
-        {/*   <Link className="active" to="AdminDashBoard">
+        {/*   <Link  activeClassName="active" to="AdminDashBoard">
                         <i className="fa fa-dashboard"></i>
                         <span>Dashboard</span>
                     </Link>*/}
-            <NavLink className="" to="AdminDashBoard">
+            <NavLink  to="AdminDashBoard"  activeClassName="active">
                         <i className="fa fa-dashboard"></i>
                         <span>Dashboard</span>
                     </NavLink>
@@ -74,15 +74,15 @@ class Header extends Component {
                         <span>Configuration</span>
                     </a>
                     <ul className="sub">
-                       <li><NavLink to="DashBoardMedianIncome" data-placement="top" data-toggle="tooltip"  data-original-title="Median  Income">Median Income</NavLink></li>
-                        <li><NavLink to="DashBoardMTSPRents" data-placement="top" data-toggle="tooltip"  data-original-title="Multifamily Tax Subsidy Program">MTSP Rents</NavLink></li>
-                       <li><NavLink to="DashBoardRCAssumptions" data-placement="top" data-toggle="tooltip"  data-original-title="Renovation Cost Assumptions">RC Assumptions</NavLink></li>
+                       <li><NavLink to="DashBoardMedianIncome"  activeClassName="active" data-placement="top" data-toggle="tooltip"  data-original-title="Median  Income">Median Income</NavLink></li>
+                        <li><NavLink to="DashBoardMTSPRents"   activeClassName="active" data-placement="top" data-toggle="tooltip"  data-original-title="Multifamily Tax Subsidy Program">MTSP Rents</NavLink></li>
+                       <li><NavLink to="DashBoardRCAssumptions"  activeClassName="active" data-placement="top" data-toggle="tooltip"  data-original-title="Renovation Cost Assumptions">RC Assumptions</NavLink></li>
 
                     </ul>
                 </li>
  
             <li>
-                    <NavLink to="DashBoardUserManage">
+                    <NavLink to="DashBoardUserManage"  activeClassName="active">
                         <i className="fa fa-users"></i>
                         <span>Users</span>
                     </NavLink>
@@ -90,7 +90,7 @@ class Header extends Component {
                 </li>
 
                 <li>
-                    <NavLink to="DashBoardProjects">
+                    <NavLink to="DashBoardProjects"  activeClassName="active">
                         <i className="fa fa-tasks"></i>
                         <span>Projects</span>
                     </NavLink>

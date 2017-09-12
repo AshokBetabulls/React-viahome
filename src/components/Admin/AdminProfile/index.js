@@ -281,7 +281,7 @@ class AdminProfile extends Component {
         </div>
                       </div>
                       <div className="modal-footer text-center center-block">
-                          <a href="profile.html"><button type="button" className="default-btn">OK</button></a>
+                          <a href="DashBoardAdminProfile"><button type="button" className="default-btn">OK</button></a>
                       </div>
                   </div>
               </div>
@@ -303,7 +303,7 @@ class AdminProfile extends Component {
         </div>
                       </div>
                       <div className="modal-footer center-block changepwdftr">
-                          <a href="profile.html"><button type="button" className="default-btn ">OK</button></a>
+                          <a href="DashBoardAdminProfile"><button type="button" className="default-btn ">OK</button></a>
                       </div>
                   </div>
               </div>
